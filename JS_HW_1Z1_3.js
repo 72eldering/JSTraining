@@ -48,12 +48,10 @@ console.log(checkAge)
 // Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось,
 // преобразовываясь в number
 
-age_1 = 1 * age_1
-age_2 = 1 * age_2
-age_3 = 1 * age_3
-
  function age3(f_age1, f_age2, f_age3){
-    if (isNaN(age_1) || isNaN(age_2) || isNaN(age_3)){
+    if (isNaN(+f_age1) || isNaN(+f_age2) || isNaN(+f_age3) ||
+        f_age1 == '' || f_age2 == '' || f_age3 == '' || 
+        typeof(age_1) == 'boolean' || typeof(age_2) == 'boolean' || typeof(age_3) == 'boolean')  {
         return 'Ошибка!!! Нужны числа'
      } else if (f_age1 < f_age2) {
          return 'You don’t have access cause your age is ' + f_age1 + ' It’s less then ' + f_age2
