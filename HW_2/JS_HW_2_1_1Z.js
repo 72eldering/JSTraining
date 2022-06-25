@@ -20,7 +20,11 @@ te.innerHTML +='задание 1*' + '</br>'
 te.innerHTML += '</br>'
 let stepn = +prompt ('Введи степень')
 dva = 2
-for (i = 1; i <= stepn; i++){
+const twoPower = function (twoStep){
+    for (i = 1; i <= twoStep; i++){
     te.innerHTML += '2^'+ i + ' = ' + dva + '</br>';
     dva *= 2;
 }
+}
+
+twoPower(stepn);
