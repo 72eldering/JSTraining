@@ -46,7 +46,7 @@ const getWordStructure = function (...stroka){
                     case sGl.indexOf(sim) >= 0: 
                       sumGl += 1
                       break;
-                    // согласные  
+                    // согласне  
                     case sSgl.indexOf(sim) >= 0: 
                       sumSgl += 1
                       break;
